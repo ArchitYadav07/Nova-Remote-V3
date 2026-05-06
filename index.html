@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novatech Remote Control Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Novatech Remote Control Dashboard</h1>
+            <p>Connect your Remote via Bluetooth (Serial) to control the DOM</p>
+        </header>
+
+        <section class="connection-panel">
+            <button id="connectBtn" class="btn primary">Connect to ESP32 Bluetooth</button>
+            <div id="statusBadge" class="badge disconnected">Disconnected</div>
+        </section>
+
+        <section class="action-panel">
+            <h2>Trading Actions</h2>
+            <p>Press the physical buttons on your remote to trigger these on the website:</p>
+            <div class="control-grid">
+                <button id="buyBtn" class="btn trade-btn buy-btn">Buy</button>
+                <button id="sellBtn" class="btn trade-btn sell-btn">Sell</button>
+                <button id="plusBtn" class="btn math-btn plus-btn">+</button>
+                <button id="minusBtn" class="btn math-btn minus-btn">-</button>
+            </div>
+        </section>
+
+        <section class="log-panel">
+            <h2>Activity Log</h2>
+            <div id="logs" class="log-box">
+                <p class="log-entry system">System initialized. Waiting for connection...</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
