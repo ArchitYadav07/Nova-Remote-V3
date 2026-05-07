@@ -2,6 +2,12 @@
 
 This repository contains the software components for a physical ESP32-based Bluetooth remote control that interacts directly with a web dashboard. The ESP32 acts as a BLE Keyboard, simulating keystrokes (`b`, `s`, `+`, `-`) when physical buttons are pressed, which are then intercepted by the web application to perform corresponding actions.
 
+## Screenshots
+<p align="center">
+  <img src="Screenshots/WhatsApp%20Image%202026-05-07%20at%2010.06.33%20AM.jpeg" width="45%" alt="ESP32 Remote Hardware" />
+  <img src="Screenshots/Screenshot%202026-05-06%20175235.png" width="45%" alt="Web Dashboard Interface" />
+</p>
+
 ## Project Structure
 
 This repository is split into three main parts:
